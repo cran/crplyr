@@ -1,6 +1,6 @@
-af81b8d3d173c2505725e5151bb87111 *DESCRIPTION
+2fa2e22e6739cd71f1efdb8095ccee4b *DESCRIPTION
 9f236b6234e5d9e1988c95ebad554113 *NAMESPACE
-d639d195834f6c8897e00ca9e482fede *NEWS.md
+84dd385e1eb82e1e2c51012e6dd14f68 *NEWS.md
 a69dc799d950d4fed610e5af7736d07c *R/AllClasses.R
 32941876a78618087be61c2b82229de2 *R/as-tibble.R
 622e3cea053d36b2464967eda1fee722 *R/crplyr.R
@@ -25,8 +25,8 @@ add14efdb3277b05ac227e8aaa0ab885 *tests/testthat/app.crunch.io/api/datasets/mtca
 486dc63e840b915688ede0183d3e399b *tests/testthat/app.crunch.io/api/datasets/mtcars/variables-d118fa.json
 e23a9ceb4bd32a5c2e273f8bade052b1 *tests/testthat/app.crunch.io/api/datasets/mtcars/variables/hier-d118fa.json
 31458a7ea13957d482451e24e563c24c *tests/testthat/helper.R
-f787d25fb11b9c21be2d534dc63d6cab *tests/testthat/test-as-tibble.R
-4e5d73aaaf6774bd39e114c3292f9610 *tests/testthat/test-filter.R
+14d2bf60cd9a61beb5e8eff5590c1db4 *tests/testthat/test-as-tibble.R
+54fed5d1042d2968f66a3d936c6fa38f *tests/testthat/test-filter.R
 f1eeca11dc5e2b166fbdf7d7fef03c26 *tests/testthat/test-group-by.R
-173e0dbb5f534bfd53dee5436ace41f0 *tests/testthat/test-select.R
+4273940f785b7b41f1d8ad905e9bc7d0 *tests/testthat/test-select.R
 b09fce40ac0d5927233d0dda5a321f69 *tests/testthat/test-summarize.R

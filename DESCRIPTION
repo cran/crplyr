@@ -7,7 +7,7 @@ Description: In order to facilitate analysis of datasets hosted on the Crunch
     "mutate", "group_by", and "summarize" are implemented in such a way as to
     perform as much computation on the server and pull as little data locally
     as possible.
-Version: 0.1.2
+Version: 0.1.4
 Authors@R: person("Neal", "Richardson", role=c("aut", "cre"), email="neal@crunch.io")
 URL: https://github.com/Crunch-io/crplyr
 BugReports: https://github.com/Crunch-io/crplyr/issues
@@ -17,8 +17,8 @@ Imports: methods, lazyeval, tibble
 Suggests: covr, httptest
 RoxygenNote: 6.0.0
 NeedsCompilation: no
-Packaged: 2017-06-06 16:26:16 UTC; neal.richardson
+Packaged: 2017-08-22 16:51:04 UTC; neal.richardson
 Author: Neal Richardson [aut, cre]
 Maintainer: Neal Richardson <neal@crunch.io>
 Repository: CRAN
-Date/Publication: 2017-06-06 16:49:49 UTC
+Date/Publication: 2017-08-22 17:21:13 UTC
