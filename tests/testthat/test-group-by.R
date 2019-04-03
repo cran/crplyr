@@ -10,10 +10,23 @@ with_mock_crunch({
         expect_identical(groups(ds), list())
         expect_identical(name(ds), "test ds")
     })
+
+    test_that("group_by_ has been removed", {
+        expect_error(
+            group_by_(ds, .dots = "catfish"),
+            "The group_by_.* function is no longer supported. Please use group_by.* instead"
+        )
+    })
+
     test_that("group_by errors if assigned columns not in dataset", {
         expect_error(group_by(ds, catfish), "catfish is not present in the Dataset")
-        expect_error(group_by(ds, catfish, dogfish), 
+        expect_error(group_by(ds, catfish, dogfish),
             "catfish, dogfish are not present in the Dataset")
+    })
+
+    test_that("group_by hidden variables", {
+        ds3 <- loadDataset("ECON.sav")
+        expect_identical(groupVars(ds3 %>% group_by(birthyr)), "birthyr")
     })
 
     ds2 <- group_by(ds, gender)
