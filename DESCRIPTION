@@ -7,11 +7,12 @@ Description: In order to facilitate analysis of datasets hosted on the Crunch
     'group_by', 'summarize', and 'collect' are implemented in such a way as to
     perform as much computation on the server and pull as little data locally
     as possible.
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: c(
     person("Neal", "Richardson", role="aut", email="neal.p.richardson@gmail.com"),
-    person("Jonathan", "Keane", role=c("aut", "cre"), email="jon.keane@crunch.io"),
-    person("Gordon", "Shotwell", role="aut", email="gordon.shotwell@gmail.com"))
+    person("Jonathan", "Keane", role="aut", email="jkeane@gmail.com"),
+    person("Gordon", "Shotwell", role="aut", email="gordon.shotwell@gmail.com"),
+    person("Mike", "Malecki", role=c("aut", "cre"), email="mike@crunch.io"))
 URL: https://crunch.io/r/crplyr/, https://github.com/Crunch-io/crplyr
 BugReports: https://github.com/Crunch-io/crplyr/issues
 License: LGPL (>= 3)
@@ -24,10 +25,11 @@ RoxygenNote: 6.1.1
 Language: en-US
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-04-03 21:01:01 UTC; npr
+Packaged: 2019-06-06 17:50:20 UTC; jkeane
 Author: Neal Richardson [aut],
-  Jonathan Keane [aut, cre],
-  Gordon Shotwell [aut]
-Maintainer: Jonathan Keane <jon.keane@crunch.io>
+  Jonathan Keane [aut],
+  Gordon Shotwell [aut],
+  Mike Malecki [aut, cre]
+Maintainer: Mike Malecki <mike@crunch.io>
 Repository: CRAN
-Date/Publication: 2019-04-03 21:52:16 UTC
+Date/Publication: 2019-06-06 23:30:07 UTC

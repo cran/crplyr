@@ -1,6 +1,6 @@
-f947bdd4df470a45a747d129877c3036 *DESCRIPTION
+d9fb575b9c1f3e36526fb16615e1bb76 *DESCRIPTION
 144e2a7a800722a311a01fe6044fc793 *NAMESPACE
-3bf1cb3bd72e1f57a0e08d33b0322774 *NEWS.md
+5c20d3ac9b295c93d0627b678d272bb1 *NEWS.md
 a5a7065b0abf4bff3e85c8d1bb0e2c8f *R/AllClasses.R
 e1d32c0e00a51c97312dbe7cab822554 *R/as-tibble.R
 6fd1861f29a81269096aff3ba42df91a *R/collect.R
@@ -12,11 +12,11 @@ ff64f565752ee3bc041ae260d49e5870 *R/group-by.R
 0ae31980d89c5038f0126fd4b9b3858e *R/select.R
 17c049e0cff5c12edc2e2615c270d4a4 *R/summarize.R
 8994be353da732cf29228ba2bae45e83 *README.md
-7d174a844cd1e0931788e687e95327ac *build/vignette.rds
+5c972c5500b0c63d80897f781517d683 *build/vignette.rds
 ab050e0b66a5cd727688c1ae3674e91b *inst/WORDLIST
 dd1759e16aad57e9fcd2732b406bb544 *inst/doc/plotting.R
 9f061e0d06ac2669789a5aaf719098d0 *inst/doc/plotting.Rmd
-419b6461606791e475222f20e8aafce1 *inst/doc/plotting.html
+252296e92bfccb7c0dbe83fa6a686f7c *inst/doc/plotting.html
 c21f61442adfee03f084ccd98ed4fc51 *man/GroupedCrunchDataset-class.Rd
 6ff80db3a4f57a33458ab7ee6248fe56 *man/as_tibble.CrunchCube.Rd
 11ff83b7f26e987cbbcbc9ec013c180d *man/autoplot.Rd
@@ -81,7 +81,7 @@ a73cfed3226c4a81614f9bd829f5e421 *tests/testthat/test-as-tibble.R
 4c7f3e9de0e02f7c27f9dea4c7c9aff8 *tests/testthat/test-collect.R
 54fed5d1042d2968f66a3d936c6fa38f *tests/testthat/test-filter.R
 10bc1458c8507fd57015813839dfbefd *tests/testthat/test-group-by.R
-31e03848426805f4fc5be312f7d27a77 *tests/testthat/test-mutate.R
+500dbeec772bda28e3f75847bc283bea *tests/testthat/test-mutate.R
 3c04c0b661cb785eab58b8f487bc2f43 *tests/testthat/test-plots-vdiff.R
 7466f2eeb18beaf895b20c0f795945dd *tests/testthat/test-select.R
 4e747b4f823e26532c498c570403d1c3 *tests/testthat/test-summarize.R
