@@ -1,25 +1,25 @@
-## ---- message=FALSE------------------------------------------------------
+## ---- message=FALSE-----------------------------------------------------------
 library(crunch)
 library(crplyr)
 library(ggplot2)
 
-## ---- include=FALSE------------------------------------------------------
+## ---- include=FALSE-----------------------------------------------------------
 library(httptest)
 start_vignette("plotting")
 login()
 
-## ----setup, include = FALSE----------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 ds <- loadDataset("https://app.crunch.io/api/datasets/5c9336/")
 
-## ----basic-card-plots, fig.width=8, fig.height=6-------------------------
+## ----basic-card-plots, fig.width=8, fig.height=6------------------------------
 autoplot(ds$CompanySize)
 
-## ----CA-plotting,  fig.width=8, fig.height=6-----------------------------
+## ----CA-plotting,  fig.width=8, fig.height=6----------------------------------
 autoplot(ds$ImportantHiring)
 autoplot(ds$ImportantHiring, "tile")
 autoplot(ds$ImportantHiring, "bar")
 
-## ----themes, fig.height=6, fig.width=8, warning=FALSE--------------------
+## ----themes, fig.height=6, fig.width=8, warning=FALSE-------------------------
 p <- autoplot(ds$CompanySize)
 p + theme_grey()
 p +
@@ -28,18 +28,18 @@ p +
 autoplot(ds$ImportantHiring) +
     scale_color_brewer()
 
-## ----fig.width= 10,  fig.width=8, fig.height=6---------------------------
+## ----fig.width= 10,  fig.width=8, fig.height=6--------------------------------
 ds %>%
     group_by(CompanySize, Professional, TabsSpaces) %>%
     summarize(count = n(Country)) %>%
     autoplot()
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 cube <- crtabs(~ Country + Professional + TabsSpaces, ds)
 cube_tbl <- as_tibble(cube)
 cube_tbl
 
-## ----  fig.width=8, fig.height=6-----------------------------------------
+## ----  fig.width=8, fig.height=6----------------------------------------------
 cube_tbl %>%
     filter(
         !is_missing,
@@ -50,12 +50,12 @@ cube_tbl %>%
     geom_point() +
     theme_crunch()
 
-## ----  fig.width=8, fig.height=6-----------------------------------------
+## ----  fig.width=8, fig.height=6----------------------------------------------
 cube <- crtabs(~ WantWorkMR + ImportantHiring, ds)
 cube_tbl <- as_tibble(cube)
 cube_tbl
 
-## ---- include=FALSE------------------------------------------------------
+## ---- include=FALSE-----------------------------------------------------------
 logout()
 end_vignette()
 
