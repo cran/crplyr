@@ -1,6 +1,6 @@
-fd20b7fde52ec6ec744b0f0687d05501 *DESCRIPTION
+df01c28d19340fad5a670e0e84a71d0d *DESCRIPTION
 bdb533dfd90597a4bb4bcbc8e054b0d3 *NAMESPACE
-e4a043d7c3de841b04a82fae70f14387 *NEWS.md
+32b4c9879b794a7f4532641fc3b35ef3 *NEWS.md
 a5a7065b0abf4bff3e85c8d1bb0e2c8f *R/AllClasses.R
 f598732557c88c2c66befe691c5285ae *R/as-tibble.R
 7e9fa961efbf0885be0250d317056b5d *R/collect.R
@@ -13,11 +13,11 @@ f7d3a35c0ef4cea5f9bc0576051813b5 *R/crplyr.R
 23fc41cc06441c2dd62b5ca049e01903 *R/select.R
 8559467c175378c3dd3873147d15e608 *R/summarize.R
 6c7d5c7a79ada06b0f1159e314d6473d *README.md
-856d90c00c260583e69b24e08b52eeaa *build/vignette.rds
+f4609cf50cc1b8f45f66d821dc8c0d96 *build/vignette.rds
 ab050e0b66a5cd727688c1ae3674e91b *inst/WORDLIST
 64038ec93ba2710e776365d1a37aed7b *inst/doc/plotting.R
 6748e7454d16420b1c9e1547f4cf9d75 *inst/doc/plotting.Rmd
-79034cfb99e844dac4f1cdf2992e4de8 *inst/doc/plotting.html
+509a7a86b260caacd223dc6e0f505b14 *inst/doc/plotting.html
 c21f61442adfee03f084ccd98ed4fc51 *man/GroupedCrunchDataset-class.Rd
 2a10faf4046d45abde34a1a59593f189 *man/as_cr_tibble.Rd
 0875fadf9b5a7ed10b541aa338b56fd3 *man/autoplot.Rd
@@ -58,7 +58,7 @@ dedc1eb4b192fb309fb73e3529637557 *tests/figs/autoplot/catarray-x-mr-dot.svg
 37455b724fc4126f1b8305cc5c05f444 *tests/figs/deps.txt
 0436a4a6244f75b3d8e0a377345b1b7d *tests/spelling.R
 77e5c15ea2381661c987d5b86ceb0309 *tests/testthat.R
-1d9174c9f7c3753852c6095ef4aec86c *tests/testthat/app.crunch.io/api/datasets/mtcars.json
+8915708be23393710663f918dbc05fbe *tests/testthat/app.crunch.io/api/datasets/mtcars.json
 e860f57913836c9479846c3963cb58ea *tests/testthat/app.crunch.io/api/datasets/mtcars/cube-245a35.json
 cfa6a0d4ab851b708b07756a955548e7 *tests/testthat/app.crunch.io/api/datasets/mtcars/cube-3adb1a.json
 4d70914bf2d38490d2249bd094a29438 *tests/testthat/app.crunch.io/api/datasets/mtcars/cube-71cc6d.json
@@ -70,6 +70,8 @@ f80bb2e1fc8f49d553825f3c7e6b940b *tests/testthat/app.crunch.io/api/datasets/mtca
 c37f31e24b7fc2f8f26f2090b08fa775 *tests/testthat/app.crunch.io/api/datasets/mtcars/cube-fa6894.json
 e159d2eccc5f20fa4bd62ff1a6ec81a1 *tests/testthat/app.crunch.io/api/datasets/mtcars/cube-fdbbc0.json
 add14efdb3277b05ac227e8aaa0ab885 *tests/testthat/app.crunch.io/api/datasets/mtcars/cube-ffb417.json
+9b0cec0c33a85fdea919ccc4fecea20f *tests/testthat/app.crunch.io/api/datasets/mtcars/folders.json
+b93bcd3b56edaee4af2f1b8eb2c48616 *tests/testthat/app.crunch.io/api/datasets/mtcars/folders/hidden.json
 22e8334ccb4c2d92c3a250114368cff9 *tests/testthat/app.crunch.io/api/datasets/mtcars/preferences.json
 ccf5126f02072de29c000b2b5d75d524 *tests/testthat/app.crunch.io/api/datasets/mtcars/summary-73a614.json
 486dc63e840b915688ede0183d3e399b *tests/testthat/app.crunch.io/api/datasets/mtcars/variables-d118fa.json
