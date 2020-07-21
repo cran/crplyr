@@ -1,6 +1,6 @@
-df01c28d19340fad5a670e0e84a71d0d *DESCRIPTION
+c60d12765f0c2fb69b062b4907af5e73 *DESCRIPTION
 bdb533dfd90597a4bb4bcbc8e054b0d3 *NAMESPACE
-32b4c9879b794a7f4532641fc3b35ef3 *NEWS.md
+3b6aec9d3570e9426970bfb1f5a9477a *NEWS.md
 a5a7065b0abf4bff3e85c8d1bb0e2c8f *R/AllClasses.R
 f598732557c88c2c66befe691c5285ae *R/as-tibble.R
 7e9fa961efbf0885be0250d317056b5d *R/collect.R
@@ -100,6 +100,8 @@ b0b13f85e2b5e8b871948b7317112055 *vignettes/plotting/0/api/datasets/5c9336/cube-
 efa3b510db3aa5f2d5b549d322e1b17e *vignettes/plotting/0/api/datasets/5c9336/cube-345eb3.json
 09f28e9adbb0b9e74b566316d293a4f1 *vignettes/plotting/0/api/datasets/5c9336/cube-873456.json
 905ee8a0662838765fa848600a769872 *vignettes/plotting/0/api/datasets/5c9336/cube-97abb9.json
+3c282ac2f25afc88069de42f16f38132 *vignettes/plotting/0/api/datasets/5c9336/folders.json
+aba14100c44b470f7278fd6391aa1ad9 *vignettes/plotting/0/api/datasets/5c9336/folders/hidden.json
 56ddc8a10c5734c80ee859b3a2b4349f *vignettes/plotting/0/api/datasets/5c9336/preferences.json
 f1a01fe2a881cc3ba7b505cdc462c701 *vignettes/plotting/0/api/datasets/5c9336/variables-d118fa.json
 069b92a33c6a463ff8079e6ffcc1e4f1 *vignettes/plotting/0/api/datasets/5c9336/variables/hier-d118fa.json
