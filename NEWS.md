@@ -1,4 +1,7 @@
-# crplyr 0.3.5
+# crplyr 0.3.7 (development version)
+* Allow tests to run with only required packages (fixes CRAN note).
+
+# crplyr 0.3.6
 * Another fix in vignette for upcoming version of crunch.
 
 # crplyr 0.3.5
