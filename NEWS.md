@@ -1,3 +1,6 @@
+# crplyr 0.3.9
+* Fix for new version of crunch
+
 # crplyr 0.3.8
 * Update tests to work with upcoming crunch version
 

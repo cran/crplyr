@@ -5,8 +5,8 @@ library(ggplot2)
 
 ## ---- include=FALSE-----------------------------------------------------------
 library(httptest)
+set_crunch_opts(crunch.api = "https://app.crunch.io/api/")
 start_vignette("plotting")
-login()
 
 ## ----setup, include = FALSE---------------------------------------------------
 ds <- loadDataset("https://app.crunch.io/api/datasets/5c9336/")
@@ -56,6 +56,5 @@ cube_tbl <- as_tibble(cube)
 cube_tbl
 
 ## ---- include=FALSE-----------------------------------------------------------
-logout()
 end_vignette()
 
