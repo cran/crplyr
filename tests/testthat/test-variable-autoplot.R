@@ -11,7 +11,7 @@ test_that("generate_colors overflows to viridis", {
 })
 
 with_mock_crunch({
-    ds <- loadDataset("test ds")
+    ds <- loadDataset("1", project = NULL)
     test_that("crunch variables produce ggplots", {
         expect_is(autoplot(ds$birthyr), "ggplot")
         expect_is(autoplot(ds$starttime), "ggplot")

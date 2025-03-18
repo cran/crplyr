@@ -1,9 +1,9 @@
-## ---- message=FALSE-----------------------------------------------------------
+## ----message=FALSE------------------------------------------------------------
 library(crunch)
 library(crplyr)
 library(ggplot2)
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 library(httptest)
 set_crunch_opts(crunch.api = "https://app.crunch.io/api/")
 start_vignette("plotting")
@@ -39,7 +39,7 @@ cube <- crtabs(~ Country + Professional + TabsSpaces, ds)
 cube_tbl <- as_tibble(cube)
 cube_tbl
 
-## ----  fig.width=8, fig.height=6----------------------------------------------
+## ----fig.width=8, fig.height=6------------------------------------------------
 cube_tbl %>%
     filter(
         !is_missing,
@@ -50,11 +50,11 @@ cube_tbl %>%
     geom_point() +
     theme_crunch()
 
-## ----  fig.width=8, fig.height=6----------------------------------------------
+## ----fig.width=8, fig.height=6------------------------------------------------
 cube <- crtabs(~ WantWorkMR + ImportantHiring, ds)
 cube_tbl <- as_tibble(cube)
 cube_tbl
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 end_vignette()
 

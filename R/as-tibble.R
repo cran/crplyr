@@ -5,10 +5,10 @@
 #' and the cube values are expressed as columns for each measure. This is useful
 #' both to better understand what each entry of a cube represents, and to work
 #' with the cube result using tidyverse tools.
-#' 
+#'
 #' The `cr_tibble` class is a subclass of `tibble` that has extra metadata
 #' to allow `ggplot::autoplot()` to work. If you find that this extra
-#' metadata is getting in the way, you can use `as_tibble()` to get 
+#' metadata is getting in the way, you can use `as_tibble()` to get
 #' a true `tibble`.
 #'
 #' @param x a CrunchCube
@@ -110,6 +110,7 @@ add_duplicate_suffix <- function(names, sep = "_"){
     return(names)
 }
 
+#' @export
 as_tibble.tbl_crunch_cube <- function(x, ...){
     attr(x, "types") <- NULL
     attr(x, "cube_metadata") <- NULL
@@ -141,6 +142,7 @@ cube_attribute <- function(x, attr = "all"){
     return(unlist(out))
 }
 
+#' @export
 `[.tbl_crunch_cube` <- function(x, i, j, drop = FALSE) {
     # TODO see if there's a way to subset the tibble directly without reassigning
     # the attributes.
@@ -152,6 +154,7 @@ cube_attribute <- function(x, attr = "all"){
     return(out)
 }
 
+#' @export
 `[[.tbl_crunch_cube` <- function(x, i, j) {
     if (missing(j)) {
         if (length(i) == 1) {
@@ -161,8 +164,8 @@ cube_attribute <- function(x, attr = "all"){
     }
 }
 
-
-as_cr_tibble.CrunchCubeCalculation <- function(x){
+#' @export
+as_cr_tibble.CrunchCubeCalculation <- function(x, ...){
     dnames <- dimnames(x)
     types <- crunch::getDimTypes(attr(x, "dims"))
     names(types) <- names(dnames)
@@ -193,10 +196,12 @@ as_cr_tibble.CrunchCubeCalculation <- function(x){
     return(out)
 }
 
-as_tibble.CrunchCubeCalculation <- function(x) {
-    as_tibble(as_cr_tibble(x))
+#' @export
+as_tibble.CrunchCubeCalculation <- function(x, ...) {
+    as_tibble(as_cr_tibble(x), ...)
 }
 
+#' @export
 as_cr_tibble.tbl_df <- function(x, cube_metadata = NULL, types = NULL, useNA = NULL, ...) {
     attr(x, "cube_metadata") <- cube_metadata
     attr(x, "types") <- types

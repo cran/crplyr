@@ -3,7 +3,7 @@ context("'group_by' on CrunchDataset")
 groupVars <- function (dataset) sapply(groups(dataset), deparse)
 
 with_mock_crunch({
-    ds <- loadDataset("test ds")
+    ds <- loadDataset("1", project = NULL)
 
     test_that("groups method on CrunchDataset", {
         expect_is(ds, "CrunchDataset")
@@ -25,7 +25,7 @@ with_mock_crunch({
     })
 
     test_that("group_by hidden variables", {
-        ds3 <- loadDataset("ECON.sav")
+        ds3 <- loadDataset("3", project = NULL)
         expect_identical(groupVars(ds3 %>% group_by(birthyr)), "birthyr")
     })
 
@@ -80,7 +80,7 @@ with_mock_crunch({
     test_that("obscure variable references to get to 100% test coverage", {
         expect_identical(groupVars(group_by(ds2, .data$gender, .data[["birthyr"]])), c("gender", "birthyr"))
     })
-    
+
     test_that("add argument deprecated", {
         expect_warning(
             expect_identical(groupVars(group_by(ds2, birthyr, add=TRUE)),

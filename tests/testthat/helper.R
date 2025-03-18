@@ -11,3 +11,9 @@ set.seed(999) ## To ensure that tests that involve randomness are reproducible
 "%>%" <- magrittr::`%>%`
 
 crplyr:::.onLoad()
+
+with_POST_crplyr <- function(resp, expr) {
+    ## Mock a POST that returns something, like a Location header pulled from 201
+    force(resp)
+    with_mocked_bindings(crPOST = function(...) resp, eval.parent(expr), .package = "crunch")
+}

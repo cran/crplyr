@@ -1,7 +1,7 @@
 context("'select' on CrunchDataset")
 
 with_mock_crunch({
-    ds <- loadDataset("test ds")
+    ds <- loadDataset("1", project = NULL)
     test_that("Some facts about the fixture dataset", {
         expect_identical(names(ds),
             c("birthyr", "gender", "location", "mymrset", "textVar", "starttime", "catarray"))
@@ -30,7 +30,7 @@ with_mock_crunch({
         )
         expect_equal(names(try_rename), c("mymrset", "starttime", "gender"))
     })
-    
+
     test_that("select_ warning", {
         expect_error(
             suppressWarnings(select_(ds, .dots = "catfish")),

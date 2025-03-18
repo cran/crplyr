@@ -2,7 +2,7 @@ context("Cube to tibble")
 
 test_that("add_duplicate_suffix generates correct character vector", {
     expect_equal(
-        add_duplicate_suffix(c("a", "a", "b", "c", "b", "c", "d")), 
+        add_duplicate_suffix(c("a", "a", "b", "c", "b", "c", "d")),
         c("a_1", "a_2", "b_1", "c_1", "b_2", "c_2", "d")
     )
 })
@@ -14,17 +14,17 @@ test_that("as_cr_tibble on prop.table", {
     prop_tbl <- as_cr_tibble(prop)
     expect_is(prop_tbl, "tbl_crunch_cube")
     expect_equal(
-        names(prop_tbl), 
+        names(prop_tbl),
         c("animal", "opinion_mr_items", "feeling_mr_items", "proportion")
     )
     expect_equal(dim(prop_tbl), c(12, 4))
     expect_equal(prop[1,1,1], prop_tbl$proportion[1])
     expect_equal(prop[2,1,2], prop_tbl$proportion[8])
-    
+
     expect_equal(
         attr(prop_tbl, "types"),
-        structure(c("categorical", "subvariable_items", "subvariable_items", 
-                    "measure"), .Names = c("animal", "opinion_mr", "feeling_mr", 
+        structure(c("categorical", "subvariable_items", "subvariable_items",
+                    "measure"), .Names = c("animal", "opinion_mr", "feeling_mr",
                                            "proportion"))
     )
     expect_is(attr(prop_tbl, "cube_metadata"), "list")
@@ -38,7 +38,7 @@ test_that("as_tibble on prop.table", {
     prop_tbl <- as_tibble(prop)
     expect_is(prop_tbl, "tbl_df")
     expect_equal(
-        names(prop_tbl), 
+        names(prop_tbl),
         c("animal", "opinion_mr_items", "feeling_mr_items", "proportion")
     )
     expect_equal(dim(prop_tbl), c(12, 4))
@@ -53,17 +53,17 @@ test_that("as_cr_tibble on margin.table", {
     marg_tbl <- as_cr_tibble(marg)
     expect_is(marg_tbl, "tbl_crunch_cube")
     expect_equal(
-        names(marg_tbl), 
+        names(marg_tbl),
         c("animal", "opinion_mr_items", "feeling_mr_items", "margin")
     )
     expect_equal(dim(marg_tbl), c(12, 4))
     expect_equal(marg[1,1,1], marg_tbl$margin[1])
     expect_equal(marg[2,1,2], marg_tbl$margin[8])
-    
+
     expect_equal(
         attr(marg_tbl, "types"),
-        structure(c("categorical", "subvariable_items", "subvariable_items", 
-                    "measure"), .Names = c("animal", "opinion_mr", "feeling_mr", 
+        structure(c("categorical", "subvariable_items", "subvariable_items",
+                    "measure"), .Names = c("animal", "opinion_mr", "feeling_mr",
                                            "margin"))
     )
     expect_is(attr(marg_tbl, "cube_metadata"), "list")
@@ -71,9 +71,9 @@ test_that("as_cr_tibble on margin.table", {
 })
 
 with_mock_crunch({
-    ds <- loadDataset("test ds")
+    ds <- loadDataset("1", project = NULL)
     ## Load a bunch of different cubes
-    with_POST("https://app.crunch.io/api/datasets/1/multitables/apidocs-tabbook/", {
+    with_POST_crplyr("https://app.crunch.io/api/datasets/1/multitables/apidocs-tabbook/", {
         book <- tabBook(multitables(ds)[[1]], data=ds)
     })
 

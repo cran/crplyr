@@ -1,7 +1,7 @@
 context("'mutate' on CrunchDataset (not implemented)")
 
 with_mock_crunch({
-    ds <- loadDataset("test ds")
+    ds <- loadDataset("1", project = NULL)
     test_that("mutate errors nicely", {
         expect_error(
             mutate(ds, men=gender == "Male"),
